@@ -1,6 +1,6 @@
 import React from 'react';
 import { Text } from 'react-native-paper';
-import type { ReactFC } from '../shared';
+import type { ReactFC } from '@tisf/rn-providers';
 
 export const Subtitle: ReactFC = ({children}) => {
   return (

@@ -1,8 +1,7 @@
 import React from 'react';
 import { Text } from 'react-native-elements';
 import type { TextStyle } from 'react-native';
-import type { ReactFC } from '../shared';
-import { useThemeStore } from '../shared';
+import { useThemeStore, ReactFC } from '@tisf/rn-providers';
 
 interface IHeading {
   marginBottom?: boolean;
