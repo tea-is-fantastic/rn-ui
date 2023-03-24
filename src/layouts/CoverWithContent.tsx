@@ -29,7 +29,17 @@ export const CoverWithContent: React.FC<ICoverWithContent> = ({ children, image 
           left: 0,
           right: 0,
         }}>
-        <Carousel
+        {image.length === 1 ? <ImageBackground
+          imageStyle={{
+            resizeMode: 'cover',
+            alignItems: 'flex-end',
+          }}
+          source={image[0]}
+          style={{
+            width,
+            height,
+          }}
+        /> : <Carousel
           data={image}
           loop={true}
           autoPlay={true}
@@ -50,17 +60,7 @@ export const CoverWithContent: React.FC<ICoverWithContent> = ({ children, image 
               }}
             />
           )}
-
-          // style={{
-          //   // flex: 1,
-          //   // width,
-          //   // height,
-          //   position: 'absolute',
-          //   top: 0,
-          //   left: 0,
-          //   right: 0,
-          // }}
-        />
+        />}
       </View>
       <View
         style={{
