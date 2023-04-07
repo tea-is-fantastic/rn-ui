@@ -4,6 +4,10 @@
     "paths": {
       "@tisf/rn-ui": ["./src/index"]
     },
+    "typeRoots": [
+      "./node_modules/@types",
+      "./@types"
+    ],
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
     "esModuleInterop": true,

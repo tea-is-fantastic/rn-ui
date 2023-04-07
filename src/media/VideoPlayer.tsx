@@ -5,6 +5,8 @@ import { useThemeStore } from '@tisf/rn-providers';
 import VideoPlayerLib from 'react-native-video-controls';
 import type { VideoProperties } from 'react-native-video';
 
+declare module 'react-native-video-controls';
+
 export const VideoPlayer: React.FC<VideoProperties> = ({
   source,
   poster,
