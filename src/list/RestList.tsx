@@ -41,12 +41,9 @@ export const RestList: React.FC<IRestListProps> = ({
   }, [data, hasMoreItems, load]);
 
   useEffect(() => {
-    const x = async () => {
-      resetData && resetData();
-      await refresh();
-    };
-    x();
-  }, [refresh, resetData]);
+    resetData && resetData();
+    refresh();
+  }, []);
 
   const renderFooter = React.useCallback(() => {
     if (loading) {
