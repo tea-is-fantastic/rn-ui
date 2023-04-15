@@ -4,7 +4,7 @@ import { View } from 'react-native';
 import { Heading } from '@tisf/rn-ui';
 
 export interface ISimpleListProps {
-  heading: string;
+  heading: React.ReactNode | string;
   data: any[];
   Component: React.ComponentType<any>;
 }
@@ -23,7 +23,7 @@ export const SimpleList: React.FC<ISimpleListProps> = ({
             paddingTop: 15,
           }}
         >
-          <Heading>{heading}</Heading>
+          {typeof heading === 'string' ? <Heading>{heading}</Heading> : heading}
         </View>
       }
       showsVerticalScrollIndicator={false}
