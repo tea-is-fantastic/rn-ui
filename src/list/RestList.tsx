@@ -57,8 +57,8 @@ export const RestList: React.FC<IRestListProps> = ({
   }, [loading]);
 
   const renderItem: FlashListProps<any>['renderItem'] = React.useCallback(
-    ({ item, index }) => {
-      return <Component data={item} key={index} />;
+    ({ item }) => {
+      return <Component data={item} />;
     },
     [Component]
   );
