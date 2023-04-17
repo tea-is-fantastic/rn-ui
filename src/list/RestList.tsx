@@ -34,6 +34,7 @@ export const RestList: React.FC<IRestListProps> = ({
   }, [load]);
 
   const onEndReached = useCallback(async (): Promise<void | null> => {
+    console.log('onEndReached', hasMoreItems);
     if (hasMoreItems) {
       return load(data.length);
     }
@@ -85,7 +86,7 @@ export const RestList: React.FC<IRestListProps> = ({
         />
       }
       onEndReached={onEndReached}
-      onEndReachedThreshold={1}
+      onEndReachedThreshold={0.1}
       keyExtractor={(item) => item?.key || item?.id}
       ListEmptyComponent={<NothingToShow load={refresh} />}
       ListFooterComponent={renderFooter}
