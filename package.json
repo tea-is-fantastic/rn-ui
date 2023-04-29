@@ -65,7 +65,7 @@
     "@release-it/conventional-changelog": "^5.0.0",
     "@shopify/flash-list": "^1.4.2",
     "@tanstack/react-query": "^4.29.1",
-    "@tisf/rn-providers": "file:../rn-providers/tisf-rn-providers-v0.1.12-local.3.tgz",
+    "@tisf/rn-providers": "^0.1.15",
     "@tsconfig/react-native": "^2.0.2",
     "@types/jest": "^28.1.2",
     "@types/lodash": "^4.14.191",
@@ -101,6 +101,7 @@
     "react-native-builder-bob": "^0.20.0",
     "react-native-elements": "^3.4.3",
     "react-native-gesture-handler": "^2.9.0",
+    "react-native-maps": "^1.6.0",
     "react-native-mmkv": "^2.6.3",
     "react-native-onesignal": "^4.5.0",
     "react-native-otp-verify": "^1.1.4",
@@ -119,13 +120,15 @@
     "@types/react": "17.0.21"
   },
   "peerDependencies": {
+    "@react-native-community/datetimepicker": "*",
     "@react-navigation/native": "^6",
     "@shopify/flash-list": "*",
     "@tanstack/react-query": "*",
-    "@tisf/rn-providers": "file:../rn-providers/tisf-rn-providers-v0.1.12-local.3.tgz",
+    "@tisf/rn-providers": "file:../rn-providers/tisf-rn-providers-v0.1.14-local.2.tgz",
     "react": "*",
     "react-native": "*",
     "react-native-elements": "*",
+    "react-native-maps": "*",
     "react-native-paper": "^5",
     "react-native-safe-area-context": "*",
     "react-native-vector-icons": "*",
@@ -134,6 +137,8 @@
   "dependencies": {
     "react-native-confirmation-code-field": "^7.3.1",
     "react-native-country-picker-modal": "^2.0.0",
+    "react-native-modal-datetime-picker": "^15.0.0",
+    "react-native-modal-selector": "^2.1.2",
     "react-native-reanimated-carousel": "^3.3.0",
     "react-native-video": "^5.2.1",
     "react-native-video-controls": "^2.8.1"
